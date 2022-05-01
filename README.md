@@ -12,6 +12,31 @@ ___
 * Restores .htaccess files if/when they are modified (e.g. by your shared hosting provider)
 * Provides peace of mind that your website will not crumble for large amounts of time 
 * Can help prevent SEO errors due to your .htaccess files being "mysteriously" modified 
+## Contents
+<!-- TOC depthFrom:2 orderedList:true updateOnSave:false -->
+
+- [About CheckHtaccess the short story](#about-checkhtaccess-the-short-story)
+  - [Why I made CheckHtaccess the long story](#why-i-made-checkhtaccess-the-long-story)
+- [Prerequisites & Requirements](#prerequisites--requirements)
+  - [Prerequisites](#prerequisites)
+  - [Minimum Requirements](#minimum-requirements)
+- [CheckHtaccess Methods](#checkhtaccess-methods)
+  - [Helper Method](#helper-method)
+- [Parameters for CheckHtaccess Methods](#parameters-for-checkhtaccess-methods)
+- [Installing CheckHtaccess](#installing-checkhtaccess)
+  - [Instantiating CheckHtaccess](#instantiating-checkhtaccess)
+  - [TLDR](#tldr)
+- [Example Directory Structure](#example-directory-structure)
+- [Usage Examples](#usage-examples)
+  - [checkHTFull: Standard, On-the-fly and Testing CheckHtaccess](#checkhtfull-standard-on-the-fly-and-testing-checkhtaccess)
+  - [checkHTCron: Setting CheckHtaccess as a Cron Job](#checkhtcron-setting-checkhtaccess-as-a-cron-job)
+    - [Adding CheckHtaccess to Cron Example](#adding-checkhtaccess-to-cron-example)
+  - [checkHTon404: Using CheckHtaccess on 404 Error Pages](#checkhton404-using-checkhtaccess-on-404-error-pages)
+- [Copyright & License](#copyright--license)
+- [Contributions](#contributions)
+- [Sponsorship](#sponsorship)
+
+<!-- /TOC -->
 ## About CheckHtaccess (the short story)
 ___
 This tool aims to act as a **set and forget** peace of mind for websites that use .htaccess files as a core structure, such as a custom CMS site, etc, without having to worry about your hosting company modifying it. 

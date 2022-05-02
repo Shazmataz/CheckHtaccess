@@ -47,7 +47,7 @@ I have been encountering a problem with one of my client's hosting package. Ever
 ## Prerequisites & Requirements
 ___
 ### Prerequisites
-I wanted to make CheckHtaccess compatible with older setups so this tool should work with PHP Version 5.6. and up. It should also work with most Linux based servers although some hosting packages may not allow PHP `fwrite` privileges.
+I wanted to make CheckHtaccess compatible with older setups so this tool should work with PHP Version 5.6. and up. It should also work with most Apache based servers although some hosting packages may not allow PHP `fwrite` privileges.
 ### Minimum Requirements
 * [PHP](https://www.php.net) 5.6 or above
 * [PHP fwrite](https://www.php.net/manual/en/function.fwrite.php) & write privileges 
@@ -269,5 +269,7 @@ Copyright 2022 Shaz Hossain ([Shazmataz](https://github.com/Shazmataz/)).
 Licensed and released under [MIT](https://github.com/Shazmataz/CheckHtaccess/LICENSE).
 ## Contributions 
 Please feel free to contribute as you wish providing you have read the [Code of Conduct](.github/CODE_OF_CONDUCT.md)! 
+
+Please also use [Conventional Commits](https://www.conventionalcommits.org) to help keep the project tidy! 
 ## Sponsorship 
 If you have found this useful, please feel free to [Buy Me A Coffee](https://buymeacoffee.com/shazmataz) (I am a coffee Lover!), or alternatively donating via [PayPal](https://paypal.me/ShazHossain). However even a star is gratefully appreciated! 

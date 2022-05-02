@@ -7,7 +7,6 @@
 [![Donate](https://img.shields.io/badge/donate-buy%20me%20a%20coffee-yellow?label=Donate&style=plastic)](https://buymeacoffee.com/shazmataz) 
 [![Donate](https://img.shields.io/badge/donate-Paypal-blue.svg?style=plastic)](https://paypal.me/ShazHossain)
 ## Main Features 
-___
 * Keeps your .htaccess files how you intended them to function 
 * Restores .htaccess files if/when they are modified (e.g. by your shared hosting provider)
 * Provides peace of mind that your website will not crumble for large amounts of time 
@@ -38,21 +37,18 @@ ___
 
 <!-- /TOC -->
 ## About CheckHtaccess (the short story)
-___
 This tool aims to act as a **set and forget** peace of mind for websites that use .htaccess files as a core structure, such as a custom CMS site, etc, without having to worry about your hosting company modifying it. 
 
 As with a lot of shared hosting packages, sometimes you can be limited with regards to root access and executing shell scripts. This is why I wanted to use PHP as the base language so that you can either incorporate it into your error pages or set a Cron job to run the script periodically, or both depending on your web hosting package. 
 ### Why I made CheckHtaccess (the long story)
 I have been encountering a problem with one of my client's hosting package. Every now and then the .htaccess file would get wiped or emptied out of the blue, without any indication as to why. After months of going back and forth with the support team claiming that it wasn't an issue on their part but maybe a script in the website (which was definitely not the case as I wrote every script on the website) and having to keep restoring the .htaccess file, I thought about investigating the problem using auditing tools but this was a shared hosting package with limited shell access. Therefore I decided to create CheckHtaccess. 
 ## Prerequisites & Requirements
-___
 ### Prerequisites
 I wanted to make CheckHtaccess compatible with older setups so this tool should work with PHP Version 5.6. and up. It should also work with most Apache based servers although some hosting packages may not allow PHP `fwrite` privileges.
 ### Minimum Requirements
 * [PHP](https://www.php.net) 5.6 or above
 * [PHP fwrite](https://www.php.net/manual/en/function.fwrite.php) & write privileges 
 ## CheckHtaccess Methods
-___
 CheckHtaccess has three usable methods: 
 * `checkHTFull()` Performs CheckHtaccess and restoration with all available options. Uses the following parameters:
   * ```$currentHtFile``` *(string)* 
@@ -86,7 +82,6 @@ CheckHtaccess has three usable methods:
 
 
 ## Parameters for CheckHtaccess Methods
-___
 CheckHtaccess predominately uses the following parameters to function: 
 
 * ```$currentHtFile``` *(string)* 
@@ -105,7 +100,6 @@ CheckHtaccess predominately uses the following parameters to function:
   * Whether to log errors to the system logs
 
 ## Installing CheckHtaccess
-___
 Installing CheckHtaccess is as simple as downloading and saving the [CheckHtaccess.class.php](src/CheckHtaccess.class.php) file into your website. This can be in a directory of it's own such as `libs/CheckHtaccess/CheckHtaccess.class.php`.
 
 The next step is to create a PHP file (or use an existing one) and. For **an additional security measure** I create a separate directory `tasks` or similar to place my CheckHtaccess related PHP scripts and backup .htaccess files and prevent access to them via my .htaccess file. For example: 
@@ -135,7 +129,6 @@ Please note that `$checkHtaccess` can be named anything.
 ### TLDR
 If you are in a hurry, feel free to check the [examples files](examples/)! 
 ## Example Directory Structure 
-___
 ```
 .                                       # public_html
 ┣ lib/                                  # Lib directory 
@@ -152,7 +145,6 @@ ___
 ```
 
 ## Usage Examples
-___
 ### `checkHTFull()`: Standard, On-the-fly and Testing CheckHtaccess 
 It is recommended to test CheckHtaccess and configure it to your setup. To do this, you should use the `checkHTFull()` within a PHP file such as `tasks/checkHTFull.php`.
 ```php
@@ -261,9 +253,7 @@ The last step is to refer to the `tasks/on404.php` file inside of your main `404
 ?>
 ``` 
 Depending on your configuration you may not need to add the `use CheckHtaccess\CheckHtaccess;`  if you have instantiated it inside `tasks/on404.php`.
-___
 ## Copyright & License 
-___
 Copyright 2022 Shaz Hossain ([Shazmataz](https://github.com/Shazmataz/)).
 
 Licensed and released under [MIT](https://github.com/Shazmataz/CheckHtaccess/LICENSE).

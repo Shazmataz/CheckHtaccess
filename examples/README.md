@@ -23,14 +23,12 @@
 
 <!-- /TOC -->
 ## Prerequisites & Requirements
-___
 ### Prerequisites
 CheckHtaccess should work with PHP Version 5.6. and up. It should also work with most Apache based servers although some hosting packages may not allow PHP `fwrite` privileges.
 ### Minimum Requirements
 * [PHP](https://www.php.net) 5.6 or above
 * [PHP fwrite](https://www.php.net/manual/en/function.fwrite.php) & write privileges 
 ## Example Directory Structure 
-___
 ```
 .                                       # public_html
 ┣ lib/                                  # Lib directory 
@@ -46,7 +44,6 @@ ___
 ┗ quickcheck.php                        # Non-indexed page for on-the-fly checking 
 ```
 ## Usage Example Files (Quick start / TLDR)
-___
 Here are examples of implementing and using CheckHtaccess if you are wanting a quick guide. These are based on the above Example Directory Structure. 
 | Methods                         | Files                                                                            |
 |---------------------------------|----------------------------------------------------------------------------------|
@@ -55,7 +52,6 @@ Here are examples of implementing and using CheckHtaccess if you are wanting a q
 | `checkHTon404()`                | [tasks/on404.php](tasks/on404.php)                                               |
 
 ## Installing CheckHtaccess
-___
 Installing CheckHtaccess is as simple as downloading and saving the [CheckHtaccess.class.php](../src/CheckHtaccess.class.php) file into your website. This can be in a directory of it's own such as `libs/CheckHtaccess/CheckHtaccess.class.php`.
 
 The next step is to create a PHP file (or use an existing one) and. For **an additional security measure** I create a separate directory `tasks` or similar to place my CheckHtaccess related PHP scripts and backup .htaccess files and prevent access to them via my .htaccess file. For example: 
@@ -84,7 +80,6 @@ $checkHtaccess = new CheckHtaccess();
 Please note that `$checkHtaccess` can be named anything.
 
 ## CheckHtaccess Methods
-___
 CheckHtaccess has three usable methods: 
 * `checkHTFull()` Performs CheckHtaccess and restoration with all available options. Uses the following parameters:
   * ```$currentHtFile``` *(string)* 
@@ -117,7 +112,6 @@ CheckHtaccess has three usable methods:
 * `getErrors()` Returns any errors, if any of the main methods returns `false`
 
 ## Parameters for CheckHtaccess Methods
-___
 CheckHtaccess predominately uses the following parameters to function: 
 
 * ```$currentHtFile``` *(string)* 
@@ -135,7 +129,6 @@ CheckHtaccess predominately uses the following parameters to function:
 * ```$logErrorsToServerLogs``` *(boolean)*
   * Whether to log errors to the system logs 
 ## Usage Examples
-___
 ### `checkHTFull()`: Standard, On-the-fly and Testing CheckHtaccess 
 It is recommended to test CheckHtaccess and configure it to your setup. To do this, you should use the `checkHTFull()` within a PHP file such as `tasks/checkHTFull.php`.
 ```php
@@ -244,9 +237,7 @@ The last step is to refer to the `tasks/on404.php` file inside of your main `404
 ?>
 ``` 
 Depending on your configuration you may not need to add the `use CheckHtaccess\CheckHtaccess;`  if you have instantiated it inside `tasks/on404.php`.
-___
 ## Copyright & License 
-___
 Copyright 2022 Shaz Hossain ([Shazmataz](https://github.com/Shazmataz/)).
 
 Licensed and released under [MIT](https://github.com/Shazmataz/CheckHtaccess/LICENSE).

@@ -137,14 +137,14 @@ If you are in a hurry, feel free to check the [examples files](examples/)!
 ## Example Directory Structure 
 ___
 ```
-.                                        # public_html
+.                                       # public_html
 ┣ lib/                                  # Lib directory 
-┃ ┗ CheckHtaccess.class.php            # CheckHtaccess main class file  
+┃ ┗ CheckHtaccess.class.php             # CheckHtaccess main class file  
 ┣ tasks/                                # tasks directory (forbidden to public)
-┃ ┣ bak.htaccess                       # Backup .htaccess file (manually copied)
-┃ ┣ checkHTFull.php                    # checkHTFull method enacting page 
-┃ ┣ on404.php                          # checkHTon404 method enacting page (to require within your 404 page)
-┃ ┗ onCron.php                         # checkHTCron method enacting page (to use as a Cron job)
+┃ ┣ bak.htaccess                        # Backup .htaccess file (manually copied)
+┃ ┣ checkHTFull.php                     # checkHTFull method enacting page 
+┃ ┣ on404.php                           # checkHTon404 method enacting page (to require within your 404 page)
+┃ ┗ onCron.php                          # checkHTCron method enacting page (to use as a Cron job)
 ┣ .htaccess                             # Active .htaccess file 
 ┣ 404.php                               # 404 error page     
 ┣ index.php                             # Website homepage    

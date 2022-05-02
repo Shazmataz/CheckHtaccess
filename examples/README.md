@@ -1,7 +1,25 @@
 # CheckHtaccess: Installation Examples & Methods!
 ## Contents
-<!-- TOC depthFrom:2 orderedList:true updateOnSave:false -->
+<!-- TOC depthfrom:2 orderedlist:true updateonsave:false -->
 
+- [Prerequisites & Requirements](#prerequisites--requirements)
+  - [Prerequisites](#prerequisites)
+  - [Minimum Requirements](#minimum-requirements)
+- [Example Directory Structure](#example-directory-structure)
+- [Usage Example Files Quick start / TLDR](#usage-example-files-quick-start--tldr)
+- [Installing CheckHtaccess](#installing-checkhtaccess)
+  - [Instantiating CheckHtaccess](#instantiating-checkhtaccess)
+- [CheckHtaccess Methods](#checkhtaccess-methods)
+  - [Helper Method](#helper-method)
+- [Parameters for CheckHtaccess Methods](#parameters-for-checkhtaccess-methods)
+- [Usage Examples](#usage-examples)
+  - [checkHTFull: Standard, On-the-fly and Testing CheckHtaccess](#checkhtfull-standard-on-the-fly-and-testing-checkhtaccess)
+  - [checkHTCron: Setting CheckHtaccess as a Cron Job](#checkhtcron-setting-checkhtaccess-as-a-cron-job)
+    - [Adding CheckHtaccess to Cron Example](#adding-checkhtaccess-to-cron-example)
+  - [checkHTon404: Using CheckHtaccess on 404 Error Pages](#checkhton404-using-checkhtaccess-on-404-error-pages)
+- [Copyright & License](#copyright--license)
+- [Contributions](#contributions)
+- [Sponsorship](#sponsorship)
 
 <!-- /TOC -->
 ## Prerequisites & Requirements

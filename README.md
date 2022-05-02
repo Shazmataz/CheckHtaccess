@@ -3,7 +3,7 @@
 ![GitHub all releases](https://img.shields.io/github/downloads/Shazmataz/CheckHtaccess/total?style=plastic) 
 ![GitHub forks](https://img.shields.io/github/forks/Shazmataz/CheckHtaccess?style=plastic)
 [![Minimum PHP Version](https://img.shields.io/badge/PHP-%3E%3D5.6-8892BF?style=plastic)](https://php.net/) 
-![GitHub](https://img.shields.io/github/license/Shazmataz/compare?style=plastic) 
+![GitHub](https://img.shields.io/github/license/Shazmataz/CheckHtaccess?style=plastic)
 [![Donate](https://img.shields.io/badge/donate-buy%20me%20a%20coffee-yellow?label=Donate&style=plastic)](https://buymeacoffee.com/shazmataz) 
 [![Donate](https://img.shields.io/badge/donate-Paypal-blue.svg?style=plastic)](https://paypal.me/ShazHossain)
 ## Main Features 
